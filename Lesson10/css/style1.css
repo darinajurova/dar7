@@ -1,0 +1,97 @@
+.wrapper {
+    width: 70vw;
+    background-color: rgb(253, 255, 240);
+    border: 1px solid #dedede;
+    box-shadow: 0 0 5px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.uploader {
+    width: 28%;
+}
+
+img {
+    width: 100%;
+}
+
+.middle-block {
+    width: 52%;
+}
+
+.progressbar {
+    border: 1px solid rgb(109, 156, 255);
+    width: 100%;
+    display: flex;
+    font-size: 1em;
+}
+
+.progress {
+    background-color: rgb(202, 226, 230);
+    flex-basis: 400px;
+    flex-shrink: 4;
+    padding: 10px;
+}
+
+.progress2 {
+    flex-basis: 600px;
+    flex-shrink: 4;
+    text-align: right;
+    padding: 10px;
+}
+
+.title-video {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wait {
+    font-size: 0.8em;
+}
+
+.all-done {
+    background-color: rgb(2, 65, 200);
+    border-color: rgb(0, 34, 107);
+    color: #ffffff;
+    width: 15%;
+    height: 31px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1200px) {
+    .wait, .progressbar {
+        font-size: 0.7em;
+    }
+    .title-video {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .progress, .progress2 {
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .uploader {
+        width: 100%;
+    }
+
+    .middle-block {
+        width: 100%;
+    }
+
+    .all-done {
+        width: 100%;
+    }
+    .wait, .progressbar {
+        font-size: 0.7em;
+    }
+}
